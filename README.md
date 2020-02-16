@@ -1,5 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic react app to understand the concept of hooks
 
+React Hooks
+==========
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+Rules of Hooks:
+----------------
+1. Call hooks only at top level.
+- Don't call it from inside loop, conditions or nested functions.
+
+2. Call hooks only from React functions
+- Call them only from react functional components and not from any regular JavaScript function.
+
+
+useState hook
+----------------
+The useState hook let you add state to functional components
+In classes the state is always an object but with useState hook state doesn't have to be object. It can be object, boolean, array etc.
+It returns two element, first element is current value of the state and second value is a state setter function.
+
+**Note:** 
+1. If new state value depends on previous state value, you can pass a function with prev state value as an argument to the setter function.
+2. While dealing with object and array make sure to spread your state variable and then call the setter function because Unlike the setState method found in class components, useState does not automatically merge update objects.
+   
 ## Available Scripts
 
 In the project directory, you can run:
